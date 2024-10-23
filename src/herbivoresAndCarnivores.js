@@ -18,8 +18,6 @@ class Herbivore extends Animal {
   constructor(name, health, hidden) {
     // Use to assing name and health accordingly to parent class.
     super(name, health);
-    this.name = name;
-    this.health = health || 100;
     // Should be false by default. (Inaction)
     this.hidden = hidden || false;
   }
@@ -33,7 +31,6 @@ class Herbivore extends Animal {
 class Carnivore extends Animal {
   constructor(name, health) {
     super(name, health);
-    this.name = name;
     this.health = health || 100;
   }
 
